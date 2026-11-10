@@ -1,0 +1,311 @@
+*,::after,::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --couleur: #1e3a8a;
+  --clair: #e8edf8;
+  --texte: #1f2937;
+  --fond: grey;
+  --interaction: cyan; 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--texte);
+  background-color: var(--fond);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h2 {
+  color: var(--couleur);
+}
+
+p a {
+  color: #e67e22;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px 32px;
+    background-color: var(--couleur);
+    color: #fff;
+}
+
+header h1 {
+  
+  margin: 0px;
+}
+
+.banniere {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center 20%;
+    margin-bottom: 24px;
+}
+
+.produits {
+  display: grid;
+  grid-template-columns: repeat(2, 420px);
+  gap: 50px 60px;
+  justify-content: center;
+}
+
+.produit {
+  position: relative;
+  padding-bottom: 14px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.reduction {
+  background-color: transparent;
+}
+
+.produit img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.produit h3 {
+  margin: 14px 0 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.promo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 14px;
+  background-color: #1c1c1c;
+  color: #ea9f05;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.achat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 14px 0;
+}
+
+.voir {
+  padding: 8px 22px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.voir:hover {
+  opacity: 0.85;
+}
+
+.ancien {
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.nouveau {
+  color: #f5a623;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.slogan {
+  margin: 4px 0 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.contacte {
+  text-decoration: underline;
+}
+
+
+
+form button {
+  margin-top: 20px;
+}
+
+
+footer {
+  margin-top: 70px;
+  padding: 0 16px 24px;
+  background-color: #3a3a3a;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.footer-contenu {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.liens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: -38px auto 24px;
+  padding: 14px 30px;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.liens li {
+  display: flex;
+  align-items: center;
+}
+
+.liens li::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 0 24px;
+  border-radius: 50%;
+  background-color: #d0d5dd;
+}
+
+.liens a {
+  color: var(--texte);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.liens a:hover {
+  text-decoration: underline;
+}
+
+.avantages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.rond {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #f5a623;
+  font-size: 1.8rem;
+}
+
+.avantages p {
+  margin: 14px 0 0;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 2px solid #888;
+  font-size: 1.8rem;
+}
+
+.reseaux a {
+  color: #888;
+  text-decoration: none;
+}
+
+.reseaux a:hover {
+  color: #fff;
+}
+
+.footer__copyright {
+  margin: 20px 0 0;
+  font-size: 0.8rem;
+}
+
+.commande{
+  margin: 20px 32px;
+}
+
+.adresse{
+  border-style: solid;
+  border-width: 2px;
+  max-width: 430px;
+  width: 100%;
+}
+
+.article{
+  border-style: solid;
+  border-width: 2px;
+  max-width: 430px;
+  width: 100%;
+}
+
+.payement{
+  border-style: solid;
+  border-width: 2px;
+  max-width: 430px;
+  width: 100%;
+}
+
+.payer{
+  margin: 15px 0px 0px 0px;
+  display: inline-block;
+  background-color: var(--interaction);
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+@media(max-width: 575px){
+
+  .produits{
+    grid-template-columns: 1fr;
+  }
+
+  .liens{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .avantages{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
